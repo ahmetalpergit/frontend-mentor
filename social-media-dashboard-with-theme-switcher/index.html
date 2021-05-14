@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | social-media-dashboard-with-theme-switcher</title>
+</head>
+
+<body>
+  <div class="social-container">
+    <div class="social-header">
+      <div class="heading">
+        <h1>Social Media Dashboard</h1>
+        <h3>Total Followers: 23,004</h3>
+      </div>
+      <hr class="dark-mode-line">
+      <div class="dark-mode">
+        <input style="opacity: 0;" class="dark-mode__input" type="checkbox" name="" id="dark" onClick="lightTheme()">
+        <label for="dark" class="dark-mode__label">
+          <p id="dark-mode__text">Dark Mode</p>
+          <span class="dark-button-bg">
+            <span class="dark-button"></span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="social-box-container">
+      <div class="social-box social-box-fb">
+        <h3 class="heading-account">
+          <img src="images/icon-facebook.svg" alt="facebook-icon" srcset="">
+          @nathanf
+        </h3>
+        <div class="social-like-box">
+          <h4 class="heading-likes">1987</h4>
+          <span class="heading-followers">FOLLOWERS</span>
+        </div>
+        <span class="heading-today"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">12 Today</span>
+      </div>
+      <div class="social-box social-box-tw">
+        <h3 class="heading-account">
+          <img src="images/icon-twitter.svg" alt="twitter-icon" srcset="">
+          @nathanf</h3>
+        <div class="social-like-box">
+          <h4 class="heading-likes">1044</h4>
+          <span class="heading-followers">FOLLOWERS</span>
+        </div>
+        <span class="heading-today"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">99 Today</span>
+      </div>
+      <div class="social-box social-box-in">
+        <h3 class="heading-account">
+          <img src="images/icon-instagram.svg" alt="instagram-icon" srcset="">
+          @nathanf</h3>
+        <div class="social-like-box">
+          <h4 class="heading-likes">11k</h4>
+          <span class="heading-followers">FOLLOWERS</span>
+        </div>
+        <span class="heading-today"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">1099 Today</span>
+      </div>
+      <div class="social-box social-box-yt">
+        <h3 class="heading-account">
+          <img src="images/icon-youtube.svg" alt="youtube-icon" srcset="">
+          @nathanf</h3>
+        <div class="social-like-box">
+          <h4 class="heading-likes">8239</h4>
+          <span class="heading-followers">SUBSCRIBERS</span>
+        </div>
+        <span class="heading-today-yt"><img src="images/icon-down.svg" class="icon" alt="down-icon" srcset="">144 Today</span>
+      </div>
+    </div>
+  </div>
+  <div class="overview-container">
+    <h2 class="heading-overview">Overview - Today</h2>
+    <div class="overview-box-container">
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Page views</h3>
+          <span class="pv-count">87</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-facebook.svg" class="company-logo" alt="facebook-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">3%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Likes</h3>
+          <span class="pv-count">52</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-facebook.svg" class="company-logo" alt="facebook-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">2%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Likes</h3>
+          <span class="pv-count">5462</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-instagram.svg" class="company-logo" alt="instagram-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">2257%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Profile views</h3>
+          <span class="pv-count">52k</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-instagram.svg" class="company-logo" alt="instagram-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">1375%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Retweets</h3>
+          <span class="pv-count">507</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-twitter.svg" class="company-logo" alt="twitter-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-down.svg" class="icon" alt="down-icon" srcset="">303%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Likes</h3>
+          <span class="pv-count">507</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-twitter.svg" class="company-logo" alt="twitter-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">553%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Likes</h3>
+          <span class="pv-count">107</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-youtube.svg" class="company-logo" alt="youtube-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">19%</span>
+        </div>
+      </div>
+      <div class="fb-views overview-box">
+        <div class="pv--1">
+          <h3 class="heading-pv">Total views</h3>
+          <span class="pv-count">1407</span>
+        </div>
+        <div class="pv--2">
+          <img src="images/icon-youtube.svg" class="company-logo" alt="youtube-icon" srcset="">
+          <span class="pv-perc"><img src="images/icon-up.svg" class="icon" alt="up-icon" srcset="">12%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function lightTheme() {
+      var socialBox = document.getElementsByClassName('social-box');
+      var overviewBox = document.getElementsByClassName('overview-box');
+
+      if (document.getElementById('dark').checked === true) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        for (let i = 0; i < socialBox.length; i++) {
+          socialBox[i].setAttribute('data-theme', 'light');
+        }
+        for (let i = 0; i < overviewBox.length; i++) {
+          overviewBox[i].setAttribute('data-theme', 'light');
+        }
+      } else {
+        document.documentElement.removeAttribute('data-theme', 'light');
+        for (let i = 0; i < socialBox.length; i++) {
+          socialBox[i].removeAttribute('data-theme', 'light');
+        }
+        for (let i = 0; i < overviewBox.length; i++) {
+          overviewBox[i].removeAttribute('data-theme', 'light');
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
