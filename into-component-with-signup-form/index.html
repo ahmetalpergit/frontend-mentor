@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div class="leftBox">
+        <h1>Learn to code by watching others</h1>
+
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="rightBox">
+        <div class="trialBox">
+          <p class="buttonText">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </p>
+        </div>
+        <div class="formBox">
+          <form action="">
+            <input type="text" placeholder="First Name" name="" id="" />
+            <input type="text" placeholder="Last Name" name="" id="" />
+            <input type="email" placeholder="Email Address" name="" id="" />
+            <input type="password" placeholder="Password" name="" id="" />
+            <button type="submit"><h3>CLAIM YOUR FREE TRIAL</h3></button>
+            <p class="termsText">
+              By clicking the button, you are agreeing to our
+              <a href="" class="tos">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+
+    <style>
+      @media (min-width:1920px){
+        .leftBox {
+          max-width: 800px;
+        }
+      }
+      @media (max-width: 1400px) {
+        .leftBox {
+          margin-left: 50px;
+
+        }
+
+        .rightBox {
+          margin-right: 50px;
+
+        }
+      }
+      @media (max-width: 950px) {
+        .gridContainer {
+          display: grid;
+          grid-template-columns: 70%;
+          grid-template-rows: 3fr 5fr;
+          grid-template-areas:
+            "leftbox"
+            "rightbox";
+          justify-content: center;
+          align-items: flex-end;
+          grid-gap: 30px;
+        }
+        .rightBox {
+          margin-right: 0;
+          grid-area: rightbox;
+          align-self: flex-start;
+          max-width: 100%;
+          justify-self: center;
+        }
+        .leftBox {
+          text-align: center;
+          margin-left: 0;
+          grid-area: leftbox;
+          padding-bottom: 0;
+          align-self: flex-end;
+          justify-self: center;
+        }
+        @media (max-width:407px){
+          
+        }
+      }
+    </style>
+  </body>
+</html>

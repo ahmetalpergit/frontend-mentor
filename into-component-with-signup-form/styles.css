@@ -1,0 +1,99 @@
+body {
+    background: hsl(0, 100%, 74%) ;
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+h1, h2, h3, h4, p, .buttonText {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.tos {
+    color: red;
+    text-decoration: none;
+}
+
+.termsText {
+    color: gray;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.buttonText {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.gridContainer {
+    display: grid;
+    /* height: 1000px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    ". ."
+    "leftbox rightbox"
+    ". .";
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.leftBox {
+    margin-left: 150px;
+    grid-area: leftbox;
+    padding-bottom: 50px;
+    justify-self: end;
+}
+
+.rightBox {
+    margin-right: 150px;
+    max-width: 500px;
+    grid-area: rightbox;
+
+}
+
+
+input {
+    width: 100%; 
+   
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    border: 1px groove hsl(246, 25%, 77%, 0.5);
+    
+}
+
+button {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;   
+    padding: 15px;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+}
+
+button h3 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.trialBox {
+    padding: 13px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.formBox {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
