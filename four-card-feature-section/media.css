@@ -1,0 +1,23 @@
+@media (max-width: 1103px) {
+    .mainContainer {
+        max-width: 40%;
+        margin: auto auto;
+    }
+    .bot {
+        margin-bottom: 20px;
+    }
+
+    .right {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 634px) {
+    .mainContainer {
+        max-width: 100%;
+    }
+    .titleContainer {
+        max-width: 100%;
+        margin: auto auto;
+    }
+}
